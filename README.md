@@ -6,12 +6,12 @@ MISSING: `semaphore.circom` -> `semaphore.r1cs verification`. The main problem i
 
 ## Build image
 
-docker build . -t semaphore-verifier
+`docker build . -t semaphore-verifier`
 
 ## Run it with proper envs set up (you can also use --env-file=... if there's more to pass)
 
-docker run -it --env ETHERSCAN_API_KEY=... semaphore-verifier:latest
+`docker run -it --env ETHERSCAN_API_KEY=... semaphore-verifier:latest`
 
 ## Run with current directory mounted for downloaded and produced files to be persisted
 
-docker run -it --env ETHERSCAN_API_KEY=... -v $PWD/build/:/build/ semaphore-verifier:latest
+`docker run -it --env ETHERSCAN_API_KEY=... -v $PWD/build/:/build/ semaphore-verifier:latest`
