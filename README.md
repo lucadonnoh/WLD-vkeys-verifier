@@ -4,6 +4,8 @@ The script verifies that the onchain verifier keys match the ones generated usin
 
 MISSING: `semaphore.circom` -> `semaphore.r1cs` verification. The main problem is that the circom compiler version used (circom@2.0.2) is non deterministic. A workaround is currently being investigated.
 
+Currently it only supports the circuit of depth 30.
+
 ## Build image
 
 `docker build . -t semaphore-verifier`
